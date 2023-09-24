@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="vega-tooltip-style">#vg-tooltip-element {
+  visibility: hidden;
+  padding: 8px;
+  position: fixed;
+  z-index: 1000;
+  font-family: sans-serif;
+  font-size: 11px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  /* The default theme is the light theme. */
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #d9d9d9;
+  color: black; }
+  #vg-tooltip-element.visible {
+    visibility: visible; }
+  #vg-tooltip-element h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 13px; }
+  #vg-tooltip-element img {
+    max-width: 200px;
+    max-height: 200px; }
+  #vg-tooltip-element table {
+    border-spacing: 0; }
+    #vg-tooltip-element table tr {
+      border: none; }
+      #vg-tooltip-element table tr td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-top: 2px;
+        padding-bottom: 2px; }
+        #vg-tooltip-element table tr td.key {
+          color: #808080;
+          max-width: 150px;
+          text-align: right;
+          padding-right: 4px; }
+        #vg-tooltip-element table tr td.value {
+          display: block;
+          max-width: 300px;
+          max-height: 7em;
+          text-align: left; }
+  #vg-tooltip-element.dark-theme {
+    background-color: rgba(32, 32, 32, 0.9);
+    border: 1px solid #f5f5f5;
+    color: white; }
+    #vg-tooltip-element.dark-theme td.key {
+      color: #bfbfbf; }
+</style>
+    <title>Alcohol Consumption Around the World</title>
+
+    <script src="./Alcohol Consumption Around the World_files/vega@5.20.2"></script>
+    <script src="./Alcohol Consumption Around the World_files/vega-lite@5.1.0"></script>
+    <script src="./Alcohol Consumption Around the World_files/vega-embed@6.17.0"></script>
+
+
+    <link rel="stylesheet" href="./Alcohol Consumption Around the World_files/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Alcohol Consumption Around the World_files/css2" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="./Alcohol Consumption Around the World_files/style.css" media="all">
+
+<style id="vega-embed-style">.vega-embed {<br>  position: relative;<br>  display: inline-block;<br>  box-sizing: border-box; }<br>  .vega-embed.has-actions {<br>    padding-right: 38px; }<br>  .vega-embed details:not([open]) > :not(summary) {<br>    display: none !important; }<br>  .vega-embed summary {<br>    list-style: none;<br>    position: absolute;<br>    top: 0;<br>    right: 0;<br>    padding: 6px;<br>    z-index: 1000;<br>    background: white;<br>    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);<br>    color: #1b1e23;<br>    border: 1px solid #aaa;<br>    border-radius: 999px;<br>    opacity: 0.2;<br>    transition: opacity 0.4s ease-in;<br>    outline: none;<br>    cursor: pointer;<br>    line-height: 0px; }<br>    .vega-embed summary::-webkit-details-marker {<br>      display: none; }<br>    .vega-embed summary:active {<br>      box-shadow: #aaa 0px 0px 0px 1px inset; }<br>    .vega-embed summary svg {<br>      width: 14px;<br>      height: 14px; }<br>  .vega-embed details[open] summary {<br>    opacity: 0.7; }<br>  .vega-embed:hover summary,<br>  .vega-embed:focus summary {<br>    opacity: 1 !important;<br>    transition: opacity 0.2s ease; }<br>  .vega-embed .vega-actions {<br>    position: absolute;<br>    z-index: 1001;<br>    top: 35px;<br>    right: -9px;<br>    display: flex;<br>    flex-direction: column;<br>    padding-bottom: 8px;<br>    padding-top: 8px;<br>    border-radius: 4px;<br>    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);<br>    border: 1px solid #d9d9d9;<br>    background: white;<br>    animation-duration: 0.15s;<br>    animation-name: scale-in;<br>    animation-timing-function: cubic-bezier(0.2, 0, 0.13, 1.5);<br>    text-align: left; }<br>    .vega-embed .vega-actions a {<br>      padding: 8px 16px;<br>      font-family: sans-serif;<br>      font-size: 14px;<br>      font-weight: 600;<br>      white-space: nowrap;<br>      color: #434a56;<br>      text-decoration: none; }<br>      .vega-embed .vega-actions a:hover {<br>        background-color: #f7f7f9;<br>        color: black; }<br>    .vega-embed .vega-actions::before, .vega-embed .vega-actions::after {<br>      content: "";<br>      display: inline-block;<br>      position: absolute; }<br>    .vega-embed .vega-actions::before {<br>      left: auto;<br>      right: 14px;<br>      top: -16px;<br>      border: 8px solid #0000;<br>      border-bottom-color: #d9d9d9; }<br>    .vega-embed .vega-actions::after {<br>      left: auto;<br>      right: 15px;<br>      top: -14px;<br>      border: 7px solid #0000;<br>      border-bottom-color: #fff; }<br>  .vega-embed .chart-wrapper {<br>    width: 100%;<br>    height: 100%; }<br><br>.vega-embed-wrapper {<br>  max-width: 100%;<br>  overflow: auto;<br>  padding-right: 14px; }<br><br>@keyframes scale-in {<br>  from {<br>    opacity: 0;<br>    transform: scale(0.6); }<br>  to {<br>    opacity: 1;<br>    transform: scale(1); } }<br></style></head>
+
+<body>
+    <div class="page">
+
+
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h1>Alcohol Comsuption Around the World</h1>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <div id="vis1" class="vis-container vega-embed" role="graphics-document" aria-roledescription="visualization" aria-label="Vega visualization" style="cursor: default;"><canvas width="860" height="427" class="marks"></canvas><form class="vega-bindings"></form></div>
+            </div>
+        </div>
+
+
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+                <div class="description description-right">
+                    <p>Alcohol is consumed all around the world!</p>
+                    <p>Most countries drink, but some don't!</p>
+                    <p>With Europe doing most of the Drinking,</p>
+                    <p>And Nothern Africa doing the least.</p>
+                    <img scr="https://github.com/ChristopherCohen007/3179/blob/main/beer_taps.jpg" alt="Beer Taps" <="" div="">
+            </div>
+            <div class="pure-u-1-3">
+                <div id="vis2" class="vis-container vega-embed" role="graphics-document" aria-roledescription="visualization" aria-label="Vega visualization" style="cursor: default;"><canvas width="295" height="325" class="marks"></canvas><form class="vega-bindings"></form></div>
+            </div>
+        </div>
+
+
+        <div class="pure-g">
+            <div class="pure-u-1-4">
+                <div id="vis4" class="vis-container vega-embed" role="graphics-document" aria-roledescription="visualization" aria-label="Vega visualization" style="cursor: default;"><canvas width="852" height="377" class="marks"></canvas><form class="vega-bindings"></form></div>
+            </div>
+        </div>
+
+
+       
+            
+        <p class="align">
+            The projections show that moving through the years the total alcohol consumed whilst in only a small amount, will continue to grow through the years!
+        </p>
+       
+    </div>
+
+    <script type="" text="" javascript"="">
+        var map = "./visualization_map.vl.json";
+        vegaEmbed("#vis1", map, {"actions": false});
+
+        var pie_chart = "./visualization_pie.vl.json";
+        vegaEmbed("#vis2", pie_chart, {"actions": false});
+
+        var scatterplot = "./visualization_scatterplot.vl.json";
+        vegaEmbed("#vis3", scatterplot, {"actions": false});
+
+        var bar_chart = "./visualization_bar.vl.json";
+        vegaEmbed("#vis4", bar_chart, {"actions": false});
+    </script>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div><iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;" src="./Alcohol Consumption Around the World_files/saved_resource.html"></iframe><div id="vg-tooltip-element" class="vg-tooltip" style="top: 455px; left: 878px"><table><tbody><tr><td class="key">Country:</td><td class="value">Madagascar</td></tr><tr><td class="key">total_consumption:</td><td class="value">1.9</td></tr></tbody></table></div></body></html>
