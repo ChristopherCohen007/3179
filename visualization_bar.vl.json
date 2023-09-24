@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/alcohol_data_averages.csv"
+  },
+  "mark": {"type": "line", "point": true},
+  "title": "Total Consumption Over Time",
+  "width": 800,
+  "height": 300,
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal"},
+    "y": {
+      "field": "avg_comsumption",
+      "type": "quantitative",
+      "scale": {"domain": [6.1, 6.6]}
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 285,
+  "height": 285,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/alcohol_data_percentages.csv"
+  },
+  "mark": {"type": "arc", "tooltip": true},
+  "encoding": {
+    "theta": {
+      "field": "percentage_average",
+      "type": "quantitative",
+      "title": "Percentage"
+    },
+    "color": {
+      "field": "alcohol_type",
+      "type": "nominal",
+      "title": "Alcohol Type",
+      "legend": {"orient": "none", "direction": "horizontal", "legendX": 0, "legendY": -30}
+    }
+  },
+  "config": {}
+}
