@@ -3,7 +3,7 @@
   "width": 285,
   "height": 285,
   "data": {
-    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/alcohol_data_percentages.csv"
+    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/data/alcohol_data_percentages.csv"
   },
   "mark": {"type": "arc", "tooltip": true},
   "encoding": {
