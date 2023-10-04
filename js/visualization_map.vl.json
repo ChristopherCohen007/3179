@@ -13,7 +13,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/alcohol_data.csv"
+          "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/data/alcohol_data.csv"
         },
         "key": "country",
         "fields": ["total_consumption"]
