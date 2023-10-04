@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/alcohol_data_averages.csv"
+    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/data/alcohol_data_averages.csv"
   },
   "mark": {"type": "line", "point": true},
   "title": "Total Consumption Over Time",
