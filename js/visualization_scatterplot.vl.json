@@ -5,7 +5,7 @@
   "height": 300,
 
   "data": {
-    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/alcohol_data.csv"
+    "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/data/alcohol_data.csv"
   },
   "params": [{"name": "grid", "select": "interval", "bind": "scales"}],
   "mark": "point",
