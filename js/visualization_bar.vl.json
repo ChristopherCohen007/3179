@@ -16,8 +16,5 @@
       "title": "Average Comsumption"
     }
   },
-  "config": {
-    "axisX": {
-      "labelAngle": 0
-  }
+  "config": {}
 }
