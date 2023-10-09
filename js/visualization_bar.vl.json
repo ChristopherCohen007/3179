@@ -8,7 +8,7 @@
   "width": 800,
   "height": 300,
   "encoding": {
-    "x": {"field": "year", "type": "ordinal"},
+    "x": {"field": "year", "type": "ordinal", "title": ""},
     "y": {
       "field": "avg_comsumption",
       "type": "quantitative",
@@ -16,5 +16,8 @@
       "title": "Average Comsumption"
     }
   },
-  "config": {}
+  "config": {
+    "axisX": {
+      "labelAngle": 0
+  }
 }
