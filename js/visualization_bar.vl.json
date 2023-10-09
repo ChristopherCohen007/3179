@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/ChristopherCohen007/3179/main/data/alcohol_data_averages.csv"
   },
   "mark": {"type": "line", "point": true},
-  "title": "Total Consumption Over Time",
+  "title": "Average Comsumption of all Countries Over Time",
   "width": 800,
   "height": 300,
   "encoding": {
@@ -12,7 +12,8 @@
     "y": {
       "field": "avg_comsumption",
       "type": "quantitative",
-      "scale": {"domain": [6.1, 6.6]}
+      "scale": {"domain": [6.1, 6.6]},
+      "title": "Average Comsumption"
     }
   },
   "config": {}
