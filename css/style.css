@@ -50,3 +50,14 @@ h1 {
 .small-font {
     font-size: 14px;
 }
+
+.line-chart-annotation {
+    z-index: 1;
+    position: absolute;
+    font-size: 10px;
+    top: 1050px;
+    left: 410px;
+    width: 100px;
+    height: 100px;
+    border: 3px transparent #73AD21;
+}
