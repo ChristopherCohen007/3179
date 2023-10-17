@@ -5,8 +5,8 @@
   },
   "mark": {"type": "line", "point": true},
   "title": "Average Comsumption of all Countries Over Time",
-  "width": 300,
-  "height": 300,
+  "width": 200,
+  "height": 200,
   "encoding": {
     "x": {"field": "year", "type": "ordinal", "title": ""},
     "y": {
